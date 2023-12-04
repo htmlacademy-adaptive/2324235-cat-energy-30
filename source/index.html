@@ -215,7 +215,14 @@
         <h4 class="contacts__title title">приглашаем к сотрудничеству дилеров!</h4>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="contacts__maps" src="images/maps@2x.webp" width="320" height="362" alt="address on the map">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/maps-desktop@2x.jpg, images/maps-desktop@2x.jpg 2x"
+          type="image/jpeg" width="1440" height="400">
+        <source media="(min-width: 768px)" srcset="images/maps-tablet@1x.jpg, images/maps-tablet@2x.jpg 2x"
+          type="image/jpeg" width="768" height="400">
+        <img class="contacts__maps" src="images/maps-mobile@1x.jpg" srcset="images/maps-mobile@2x.jpg 2x" width="320"
+          height="362" alt="address on the map">
+      </picture>
     </section>
   </main>
 
