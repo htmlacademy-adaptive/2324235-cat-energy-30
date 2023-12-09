@@ -154,8 +154,18 @@
             <span>15 000 РУБ.</span>
           </div>
           <div class="example__slider slider">
-            <img class="slider__image-before" src="#" alt="Кот до программы" width="280" height="256">
-            <img class="slider__image-after" src="#" alt="Кот после программы" width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.png, images/slider-before-tablet@2x.png 2x"
+                type="image/png" width="560" height="512">
+              <img class="slider__img-before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x"
+                alt="Кот до программы" width="280" height="256">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.png, images/slider-after-tablet@2x.png 2x"
+                type="image/png" width="560" height="512">
+              <img class="slider__img-after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x"
+                alt="Кот после программы" width="280" height="256">
+            </picture>
             <button class="example__button" aria-label="ползунок слайдера" type="button">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
