@@ -1,0 +1,63 @@
+.additional__gift {
+  position: relative;
+}
+
+.additional__gift::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons2/icon-gift.svg");
+  width: 78px;
+  height: 80px;
+  background-size: 78px 80px;
+  background-position: top top;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.additional__title {
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: $black;
+}
+
+.additional__list-title {
+  font-family: $font-primary;
+  color: $text-color-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__text {
+  line-height: 14px;
+}
+
+.additional__value {
+  line-height: 14px;
+}
+
+.additional__gift-background {
+  background-image:
+    linear-gradient($green-gradient 290px, transparent 290px),
+    image-set(url("../../images/gift-mobile@1x.jpg") type("image/jpg"),
+      url("../../images/gift-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/gift-mobile@1x.webp") type("image/webp"),
+      url("../../images/gift-mobile@2x.webp") type("image/webp") 2x);
+  background-size: 100% 290px, 280px 290px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+}
+
+.additional__gift-text {
+  color: $white;
+  padding: 187px 58px 43px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}

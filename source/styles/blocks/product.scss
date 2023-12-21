@@ -1,0 +1,39 @@
+.product__title {
+  margin: 27px 0 41px;
+}
+
+.product__list-title {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}
+
+.product__list-title--decor {
+  color: $text-color-special;
+}
+
+.product__property-name {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.product__property-value {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.product__item-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.product__button--transparent {
+  background-color: $grey-extra-light;
+  color: $base-text-color;
+}

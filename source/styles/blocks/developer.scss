@@ -1,0 +1,18 @@
+.developer {
+  display: flex;
+  width: 280px;
+  height: 34px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.developer span {
+  color: $base-text-color;
+  font-family: $font-base;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: auto;
+}
