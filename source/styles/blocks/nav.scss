@@ -17,6 +17,7 @@
   top: 65px;
   transform: translateY(-500%);
   transition: all 0.5s;
+  border-bottom: 1px solid $grey-light;
 }
 
 .menu-nav__list.active {
