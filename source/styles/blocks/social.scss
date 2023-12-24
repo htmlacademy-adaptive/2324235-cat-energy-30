@@ -1,6 +1,9 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
-  margin: 20px 0;
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid $grey-secondary;
 }
+
