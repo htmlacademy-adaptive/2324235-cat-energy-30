@@ -1,15 +1,16 @@
 .hero {
   background-color: $white;
   background-image:
-    linear-gradient(to bottom, $green-gradient 302px, transparent 302px),
-    image-set(url("../../images/hero-img@1x.jpg") type("image/jpg"),
-      url("../../images/hero-img@2x.jpg") type("image/jpg") 2x,
-      url("../../images/hero-img@1x.webp") type("image/webp"),
-      url("../../images/hero-img@2x.webp") type("image/webp") 2x);
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100% 100%, 320px 302px;
-  background-position: center top, center top;
-  min-height: 567px;
+    image-set(
+    url("../../images/hero-img@1x.jpg") type("image/jpg"),
+    url("../../images/hero-img@2x.jpg") type("image/jpg") 2x,
+    url("../../images/hero-img@1x.webp") type("image/webp"),
+    url("../../images/hero-img@2x.webp") type("image/webp") 2x),
+    linear-gradient(to bottom, $green-gradient 302px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size: 320px 302px, 100% 100%;
+  background-position: center top;
+  min-height: 480px;
 }
 
 .hero__inner {

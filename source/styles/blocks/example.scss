@@ -39,10 +39,11 @@
 
 .example__info-text {
   font-size: 12px;
+  line-height: 1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -25px;
+  bottom: -17px;
   padding: 0 15px;
   background-color: $grey-super-light;
 }
