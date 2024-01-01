@@ -1,0 +1,21 @@
+.wrapper-title {
+  position: relative;
+}
+
+.wrapper-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  z-index: -1;
+  height: 2px;
+  background-color: $green-base;
+}
+
+.title-decor {
+  margin: 0 -20px;
+  padding: 0 20px;
+  width: max-content;
+  background-color: $white;
+}

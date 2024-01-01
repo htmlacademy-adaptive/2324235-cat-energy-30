@@ -1,8 +1,8 @@
 .developer {
   display: flex;
-  width: 280px;
+  min-width: 280px;
   height: 34px;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
