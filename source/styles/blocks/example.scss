@@ -51,8 +51,11 @@
 .example__expenses {
   font-family: $font-primary;
   font-size: 14px;
+  line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 20px;
+  color: $black;
 }
 
 .example__slider {
