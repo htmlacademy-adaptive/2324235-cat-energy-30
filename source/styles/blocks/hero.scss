@@ -1,0 +1,53 @@
+.hero {
+  background-color: $white;
+  background-image:
+    image-set(
+    url("../../images/hero-img@1x.jpg") type("image/jpg"),
+    url("../../images/hero-img@2x.jpg") type("image/jpg") 2x,
+    url("../../images/hero-img@1x.webp") type("image/webp"),
+    url("../../images/hero-img@2x.webp") type("image/webp") 2x),
+    linear-gradient(to bottom, $green-gradient 302px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size: 320px 302px, 100% 100%;
+  background-position: center top;
+  min-height: 480px;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.hero__title {
+  color: $white;
+  padding: 27px 15px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.hero__text {
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  padding-top: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.hero__img {
+  margin: 29px auto 0;
+}
+
+.hero__link {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: $green-base;
+  color: $white;
+  padding: 10px;
+  text-transform: uppercase;
+}

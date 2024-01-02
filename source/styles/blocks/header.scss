@@ -1,3 +1,10 @@
 .header {
-  background-color: inherit;
+  min-height: 65px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0 14px;
+  align-items: center;
 }
