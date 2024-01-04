@@ -13,7 +13,7 @@
 }
 
 .additional__list-item {
-  padding: 13px 0 19px;
+  padding: 13px 0 0;
   border-top: 1px solid $grey;
 }
 
@@ -44,6 +44,10 @@
 
 .additional__value {
   line-height: 14px;
+}
+
+.additional__button {
+  margin-bottom: 19px;
 }
 
 .additional__gift {
