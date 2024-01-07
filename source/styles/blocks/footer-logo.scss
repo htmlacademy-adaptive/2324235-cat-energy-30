@@ -4,3 +4,13 @@
   padding-bottom: 20px;
   width: 100%;
 }
+
+.footer-logo svg {
+  fill: $text-color-special;
+}
+
+.footer-logo svg:focus,
+.footer-logo svg:hover {
+  fill: $black-super-light;
+}
+

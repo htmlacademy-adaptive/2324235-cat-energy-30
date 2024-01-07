@@ -7,3 +7,12 @@
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
 }
+
+.social__link {
+  fill: $grey-dark;
+}
+
+.social__item .social__link:focus,
+.social__link:hover {
+  fill: $green-base;
+}

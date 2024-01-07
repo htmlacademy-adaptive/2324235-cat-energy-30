@@ -16,3 +16,12 @@
   line-height: 20px;
   margin-right: auto;
 }
+
+.icon-html-academy {
+  fill: $grey-dark;
+}
+
+.developer:focus .icon-html-academy,
+.icon-html-academy:hover {
+  fill: $green-base;
+}
