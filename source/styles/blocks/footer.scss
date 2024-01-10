@@ -8,5 +8,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
-  border-bottom: 1px solid $grey-secondary;
+
+  @media #{$tablet} {
+    flex-direction: row;
+  }
 }

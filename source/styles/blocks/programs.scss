@@ -11,6 +11,10 @@
   background-color: $grey-extra-light;
   margin-bottom: 20px;
   position: relative;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
 }
 
 .programs__item::before {
@@ -22,6 +26,14 @@
   border-radius: 50%;
   top: 24px;
   left: 21px;
+
+  @media #{$tablet} {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: auto;
+    right: 63px;
+  }
 }
 
 .programs__item--slim::after {
@@ -32,6 +44,14 @@
   background-image: url("../../images/icons/stack.svg#cat-slim");
   top: 21px;
   left: 27px;
+
+  @media #{$tablet} {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: auto;
+    right: 93px;
+  }
 }
 
 .programs__item--pro::after {
@@ -42,6 +62,14 @@
   background-image: url("../../images/icons/stack.svg#cat-pro");
   top: 35px;
   left: 13px;
+
+  @media #{$tablet} {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 29px;
+  }
 }
 
 .programs__title {
@@ -54,12 +82,28 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 53px;
+    margin-bottom: 24px;
+  }
 }
 
 .programs__lead {
   margin: 0 20px 19px;
   border-bottom: 1px solid $grey-secondary;
   padding-bottom: 23px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    margin: 0 316px 48px 53px;
+    border: none;
+  }
 }
 
 .programs__link {
@@ -69,8 +113,16 @@
   color: $black;
   display: inline-block;
   margin: 0 20px 18px;
+
+  @media #{$tablet} {
+    margin: 0 0 53px 53px;
+  }
 }
 
 .programs__link span {
   margin-right: 15px;
+
+  @media #{$tablet} {
+    margin-right: 25px;
+  }
 }

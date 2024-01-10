@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 0;
+
+  @media #{$tablet} {
+    padding: 60px 40px;
+  }
 }
 
 .contacts__title {
@@ -19,15 +23,30 @@
   color: $text-color-special;
   width: 140px;
   padding-right: 10px;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text {
   line-height: 20px;
   width: 140px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    text-align: right;
+    width: 160px;
+  }
 }
 
 .contacts__address {
   margin: 0;
+
+  @media #{$tablet} {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__city {

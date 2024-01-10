@@ -5,6 +5,11 @@
   line-height: 36px;
   color: $black;
   margin: 0;
+
+  @media #{$tablet} {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title-decor {

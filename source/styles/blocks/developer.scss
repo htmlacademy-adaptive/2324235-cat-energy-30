@@ -4,7 +4,12 @@
   height: 34px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
+
+  @media #{$tablet} {
+    padding: 0;
+    min-width: 168px;
+  }
 }
 
 .developer span {
@@ -15,6 +20,12 @@
   font-weight: 400;
   line-height: 20px;
   margin-right: auto;
+
+  @media #{$tablet} {
+    margin: 0;
+    padding-right: 23px;
+    align-items: center;
+  }
 }
 
 .icon-html-academy {

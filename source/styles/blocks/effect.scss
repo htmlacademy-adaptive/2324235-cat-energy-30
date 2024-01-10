@@ -1,6 +1,12 @@
 .effect__title {
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media #{$tablet} {
+    line-height: 60px;
+    padding-top: 15px;
+    margin-bottom: 72px;
+  }
 }
 
 .effect__list {
@@ -8,11 +14,40 @@
   position: relative;
   margin: 0;
   margin-bottom: 50px;
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 37px;
+    column-gap: 140px;
+  }
 }
 
 .effect__item {
-  height: 60px;
+  min-height: 60px;
   margin-bottom: 20px;
+
+  @media #{$tablet} {
+    min-height: 280px;
+    width: 250px;
+    margin: 0;
+    padding-top: 40px;
+    position: relative;
+    counter-increment: effect__list;
+  }
+}
+
+@media #{$tablet} {
+  .effect__item::after {
+    content: counter(effect__list);
+    position: absolute;
+    font-family: $font-primary;
+    font-size: 280px;
+    line-height: 1;
+    color: $grey-extra-light;
+    top: 0;
+    left: 116px;
+  }
 }
 
 .effect__item::before {
@@ -24,33 +59,62 @@
   position: absolute;
   left: 0;
   background-position: center;
+
+  @media #{$tablet} {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .effect__item--leaf::before {
   content: "";
   background-image: url("../../images/icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
+
+  @media #{$tablet} {
+    grid-column: 1 / 2;
+  }
 }
 
 .effect__item--powder::before {
   content: "";
   background-image: url("../../images/icons/stack.svg#icon-powder");
   background-size: 26px 29px;
+
+  @media #{$tablet} {
+    grid-column: 2 / 3;
+  }
 }
 
 .effect__item--eat::before {
   content: "";
   background-image: url("../../images/icons/stack.svg#icon-eat");
   background-size: 25px 30px;
+
+  @media #{$tablet} {
+    grid-column: 1 / 2;
+  }
 }
 
 .effect__item--time::before {
   content: "";
   background-image: url("../../images/icons/stack.svg#icon-time");
   background-size: 26px 31px;
+
+  @media #{$tablet} {
+    grid-column: 2 / 3;
+  }
 }
 
 .effect__text {
   padding-left: 80px;
   margin: 0;
+
+  @media #{$tablet} {
+    padding: 111px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    z-index: 1;
+  }
 }

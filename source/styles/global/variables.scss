@@ -1,4 +1,3 @@
-// COLOR
 
 $base-text-color: #444444;
 $text-color-secondary: #222222;
@@ -20,7 +19,8 @@ $green-base: #68b738;
 $green-gradient: #64a83d;
 $green-gradient-secondary:#7ec256;
 
-// FONTS
-
 $font-base: "Lato", "arial", sans-serif;
 $font-primary: "Oswald", "arial", sans-serif;
+
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1440px)";

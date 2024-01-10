@@ -11,6 +11,10 @@
   background-size: 320px 302px, 100% 100%;
   background-position: center top;
   min-height: 480px;
+
+  @media #{$tablet} {
+    background-image: none;
+  }
 }
 
 .hero__inner {
@@ -25,6 +29,12 @@
   padding: 27px 15px 0;
   text-align: center;
   margin: 0;
+
+  @media #{$tablet} {
+    color: $black;
+    text-align: start;
+    padding-left: 90px;
+  }
 }
 
 .hero__text {
@@ -35,6 +45,15 @@
   padding-top: 25px;
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
+
+  @media #{$tablet} {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    padding-left: 90px;
+  }
 }
 
 .hero__img {
@@ -50,4 +69,14 @@
   color: $white;
   padding: 10px;
   text-transform: uppercase;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+    width: 250px;
+    margin-left: 90px;
+    position: absolute;
+    top: 330px;
+  }
 }

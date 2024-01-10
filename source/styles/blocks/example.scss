@@ -1,18 +1,49 @@
 .example {
   background-color: $grey-super-light;
+
+  @media #{$tablet} {
+    background-color: transparent;
+    background-image: linear-gradient(to top, $grey-super-light 462px, transparent 462px);
+  }
 }
 
 .example__inner {
-  padding: 25px 0 40px;
+  padding: 25px 0 0;
+
+  @media #{$tablet} {
+    padding-bottom: 101px;
+  }
 }
 
 .example__title {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  @media #{$tablet} {
+    border-top: 1px solid $grey-light;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 45px 0 0 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+@media #{$tablet} {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
 }
 
 .example__info-list {
@@ -21,6 +52,10 @@
   text-align: center;
   gap: 32px;
   flex-wrap: wrap;
+
+  @media #{$tablet} {
+    gap: 42px;
+  }
 }
 
 .example__info-item {
@@ -31,22 +66,45 @@
   width: 124px;
   margin-bottom: 34px;
   position: relative;
+
+  @media #{$tablet} {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 
 .example__info-value {
   font-family: $font-primary;
   font-size: 24px;
+  line-height: 1;
+  color: $black;
+
+  @media #{$tablet} {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__info-text {
   font-size: 12px;
   line-height: 1;
+  color: $base-text-color;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -17px;
   padding: 0 15px;
   background-color: $grey-super-light;
+
+  @media #{$tablet} {
+    background-color: $white;
+    font-size: 14px;
+    line-height: 1;
+    width: max-content;
+    padding: 0 7px;
+    bottom: -5px;
+  }
 }
 
 .example__expenses {
@@ -57,6 +115,22 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: $black;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    text-align: end;
+    margin-bottom: 0;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media #{$tablet} {
+  .example__expenses-value {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
 }
 
 .example__slider {

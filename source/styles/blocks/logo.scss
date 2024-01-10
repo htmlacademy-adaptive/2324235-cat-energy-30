@@ -1,8 +1,16 @@
 .logo {
   display: flex;
   align-items: center;
+
+  @media #{$tablet} {
+    margin-right: 20px;
+  }
 }
 
 .logo-img {
   margin-right: 55px;
+
+  @media #{$tablet} {
+    margin-right: 13px;
+  }
 }
