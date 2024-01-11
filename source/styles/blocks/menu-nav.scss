@@ -1,5 +1,10 @@
 .menu-nav {
   z-index: 0;
+  border-top: 1px solid $grey-light;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: -20px;
+  padding-right: -20px;
 }
 
 .menu-nav::before {
@@ -11,6 +16,7 @@
   right: 0;
   background-color: $white;
   z-index: -1;
+  border-bottom: 1px solid $grey-light;
 }
 
 .menu-nav__list {
@@ -27,8 +33,7 @@
   text-align: center;
   top: 69px;
   transform: translateY(-200%);
-  transition: all 0.5s;
-  border-top: 2px solid $grey-light;
+  transition: transform 0.3s ease-in-out;
   z-index: -2;
 
   @media #{$tablet} {
@@ -49,9 +54,17 @@
   transform: translateY(0);
 }
 
+.menu-nav--no-js .menu-nav__list {
+  transform: translateY(0);
+  z-index: 0;
+  position: static;
+}
+
 .menu-nav__item {
-  padding: 22px 0 24px;
+  padding: 22px 20px 24px;
   border-bottom: 1px solid $grey-light;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media #{$tablet} {
     border: none;
@@ -86,13 +99,16 @@
   }
 }
 
+.menu-nav--no-js .menu-nav__toggle {
+  display: none;
+}
 
 .menu-nav__toggle span {
   position: absolute;
   height: 2px;
   width: 100%;
   background-color: $black;
-  left: 0;
+  right: 20px;
   transition: transform 0.3s ease-in-out;
 }
 

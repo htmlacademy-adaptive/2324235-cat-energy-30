@@ -13,3 +13,8 @@
     padding-right: 4px;
   }
 }
+
+.header--no-js .header__inner {
+  display: block;
+  padding-bottom: 0;
+}
