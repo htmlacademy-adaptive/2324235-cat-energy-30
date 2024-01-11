@@ -17,6 +17,10 @@
   background-color: $white;
   z-index: -1;
   border-bottom: 1px solid $grey-light;
+
+  @media #{$tablet} {
+    border: none;
+  }
 }
 
 .menu-nav__list {
@@ -38,15 +42,16 @@
 
   @media #{$tablet} {
     flex-direction: row;
+    justify-content: space-between;
     transform: translateY(0);
     position: relative;
     top: 0;
-    border: none;
     font-size: 18px;
     line-height: 24px;
     gap: 33px;
     transition: none;
     flex-wrap: wrap;
+    z-index: 0;
   }
 }
 
@@ -68,7 +73,8 @@
 
   @media #{$tablet} {
     border: none;
-    padding: 0;
+    margin: 0;
+    padding-left: 0;
   }
 }
 
