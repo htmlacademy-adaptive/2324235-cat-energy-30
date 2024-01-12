@@ -1,6 +1,10 @@
 .additional__wrapper-title {
   margin-top: 25px;
   margin-bottom: 36px;
+
+  @media #{$tablet} {
+    margin-bottom: 80px;
+  }
 }
 
 .additional__title {
@@ -10,6 +14,12 @@
   font-style: normal;
   line-height: 24px;
   color: $black;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+  }
 }
 
 .additional__list-item {
