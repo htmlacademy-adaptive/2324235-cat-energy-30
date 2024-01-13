@@ -136,11 +136,11 @@
 
   @media #{$tablet} {
     background-image:
-    image-set(url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
-    url("../../images/gift-tablet@2x.jpg") type("image/jpg") 2x,
-    url("../../images/gift-tablet@1x.webp") type("image/webp"),
-    url("../../images/gift-tablet@2x.webp") type("image/webp") 2x),
-    linear-gradient(to bottom, $green-gradient-secondary 200px, transparent 200px);
+      image-set(url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
+      url("../../images/gift-tablet@2x.jpg") type("image/jpg") 2x,
+      url("../../images/gift-tablet@1x.webp") type("image/webp"),
+      url("../../images/gift-tablet@2x.webp") type("image/webp") 2x),
+      linear-gradient(to bottom, $green-gradient-secondary 200px, transparent 200px);
     background-size: cover, 100% 100%;
     background-position: top;
   }
