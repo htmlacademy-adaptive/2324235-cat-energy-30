@@ -29,7 +29,7 @@
   border-bottom: 1px solid $grey-special;
   margin-left: -20px;
   margin-right: -20px;
-  height: 209px;
+  min-height: 209px;
 
   @media #{$tablet} {
     border: none;
@@ -40,16 +40,17 @@
     align-items: center;
     padding: 0 37px 40px;
     margin: 15px 0 0;
-    background-image: linear-gradient(to top, $grey-super-light 430px, transparent 430px);
+    background-color: $grey-super-light;
+    background-image: linear-gradient(to bottom, $white 81px, transparent 81px,);
   }
 }
 
 @media #{$tablet} {
   .product__list-item--more {
-    background-image: linear-gradient(to top, $white 430px, transparent 430px);
+    background-color: $white;
     border: 2px solid $grey-super-light;
     min-height: 429px;
-    margin-top: 99px;
+    margin-top: 95px;
   }
 }
 
