@@ -79,7 +79,7 @@
             </div>
             <div class="selection__items">
               <h2 class="visually-hidden">Выбор программы</h2>
-              <div class="selection__wrapper">
+              <div class="selection__wrapper-program">
                 <div class="selection__program">
                   <label class="selection__items-label selection__items-label--radio">
                     <input class="selection__items-input selection__items-input--radio" type="radio" name="choice" checked>
@@ -124,7 +124,8 @@
             </div>
             <div class="selection__data">
               <label class="selection__items-label" for="phone">Телефон:*</label>
-              <input class="selection__items-input selection__items-input--connect" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="selection__items-input selection__items-input--connect" type="tel" name="phone" id="phone"
+                placeholder="8 (960) 900-60-90" required>
               <span class="selection-icon">
                 <svg width="20" height="20">
                   <use href="images/icons/stack.svg#icon-phone"></use>
@@ -140,9 +141,11 @@
             </div>
           </div>
           <div class="container">
-            <label class="visually-hidden" for="textarea">Ввести текст</label>
-            <textarea class="selection__items-textarea" name="textarea" id="textarea" cols="30"
-              rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="selection__textaria">
+              <label class="visually-hidden" for="textarea">Ввести текст</label>
+              <textarea class="selection__items-textarea" name="textarea" id="textarea" cols="30" rows="10"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
         </div>
         <div class="selection__items">
@@ -152,33 +155,35 @@
             </div>
           </div>
           <div class="container">
-            <div class="selection__data">
-              <label class="selection__items-label selection__items-label--check">
-                <input class="selection__items-input selection__items-input--check" type="checkbox" name="sweetener" checked>
-                <span class="selection__items-check"></span>
-                Сахарозаменитель
-              </label>
-            </div>
-            <div class="selection__data">
-              <label class="selection__items-label selection__items-label--check">
-                <input class="selection__items-input selection__items-input--check" type="checkbox" name="water">
-                <span class="selection__items-check"></span>
-                Питьевая вода
-              </label>
-            </div>
-            <div class="selection__data">
-              <label class="selection__items-label selection__items-label--check">
-                <input class="selection__items-input selection__items-input--check" type="checkbox" name="milk">
-                <span class="selection__items-check"></span>
-                Молоко
-              </label>
-            </div>
-            <div class="selection__data">
-              <label class="selection__items-label selection__items-label--check">
-                <input class="selection__items-input selection__items-input--check" type="checkbox" name="vitamins">
-                <span class="selection__items-check"></span>
-                Витамины
-              </label>
+            <div class="selection__data-additionally">
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="selection__items-input selection__items-input--check" type="checkbox" name="sweetener" checked>
+                  <span class="selection__items-check"></span>
+                  Сахарозаменитель
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="selection__items-input selection__items-input--check" type="checkbox" name="water">
+                  <span class="selection__items-check"></span>
+                  Питьевая вода
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="selection__items-input selection__items-input--check" type="checkbox" name="milk">
+                  <span class="selection__items-check"></span>
+                  Молоко
+                </label>
+              </div>
+              <div class="selection__data">
+                <label class="selection__items-label selection__items-label--check">
+                  <input class="selection__items-input selection__items-input--check" type="checkbox" name="vitamins">
+                  <span class="selection__items-check"></span>
+                  Витамины
+                </label>
+              </div>
             </div>
           </div>
         </div>
