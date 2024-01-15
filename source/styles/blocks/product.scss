@@ -8,6 +8,11 @@
   @media #{$tablet} {
     padding: 65px 50px 84px;
     text-align: start;
+    border: none;
+
+    @media #{$desktop} {
+      padding: 74px 130px 84px;
+    }
   }
 }
 
@@ -19,6 +24,13 @@
   @media #{$tablet} {
     gap: 60px;
     margin-bottom: 70px;
+  }
+
+  @media #{$desktop} {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    column-gap: 80px;
+    row-gap: 63px;
+    margin-bottom: 76px;
   }
 }
 

@@ -1,8 +1,10 @@
 .header {
   min-height: 65px;
   position: relative;
+}
 
-  @media #{$desktop} {
+@media #{$desktop} {
+  .header--deсor {
     position: absolute;
     top: 0;
     left: 0;

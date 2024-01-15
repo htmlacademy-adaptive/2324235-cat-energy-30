@@ -97,8 +97,10 @@
 
 .menu-nav__link {
   color: $black;
+}
 
-  @media #{$desktop} {
+@media #{$desktop} {
+  .menu-nav__link--deсor {
     color: $white;
   }
 }
