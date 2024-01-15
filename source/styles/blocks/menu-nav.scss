@@ -5,6 +5,10 @@
   margin-right: -20px;
   padding-left: -20px;
   padding-right: -20px;
+
+  @media #{$desktop} {
+    border: none;
+  }
 }
 
 .menu-nav::before {
@@ -20,6 +24,10 @@
 
   @media #{$tablet} {
     border: none;
+  }
+
+  @media #{$desktop} {
+    background-color: transparent;
   }
 }
 
@@ -54,6 +62,13 @@
     flex-wrap: wrap;
     z-index: 0;
   }
+
+  @media #{$desktop} {
+    font-size: 20px;
+    line-height: 1;
+    gap: 32px;
+    background-color: transparent;
+  }
 }
 
 .menu-nav__list.active {
@@ -82,12 +97,23 @@
 
 .menu-nav__link {
   color: $black;
+
+  @media #{$desktop} {
+    color: $white;
+  }
 }
 
 @media #{$tablet} {
   .menu-nav__link--current {
     border-bottom: 2px solid $green-base;
     padding-bottom: 10px;
+  }
+}
+
+@media #{$desktop} {
+  .menu-nav__link--current {
+    border-bottom: 2px solid $white;
+    padding-bottom: 8px;
   }
 }
 

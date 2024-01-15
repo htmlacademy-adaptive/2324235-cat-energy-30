@@ -4,8 +4,11 @@
 
   @media #{$tablet} {
     line-height: 60px;
-    padding-top: 15px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 32px;
   }
 }
 
@@ -13,13 +16,18 @@
   padding: 0;
   position: relative;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 
   @media #{$tablet} {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     row-gap: 37px;
     column-gap: 140px;
+
+    @media #{$desktop} {
+      column-gap: 94px;
+      margin-bottom: 69px;
+    }
   }
 }
 

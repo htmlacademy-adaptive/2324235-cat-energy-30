@@ -5,13 +5,23 @@
     background-color: transparent;
     background-image: linear-gradient(to top, $grey-super-light 462px, transparent 462px);
   }
+
+  @media #{$desktop} {
+    background-image: linear-gradient(to top, $grey-super-light 461px, transparent 461px);
+  }
 }
+
 
 .example__inner {
   padding: 25px 0 0;
 
   @media #{$tablet} {
     padding-bottom: 101px;
+  }
+
+  @media #{$desktop} {
+    position: relative;
+    padding: 0;
   }
 }
 
@@ -25,6 +35,12 @@
     padding: 45px 0 0 30px;
     margin-bottom: 60px;
   }
+
+  @media #{$desktop} {
+    border: none;
+    padding-top: 0;
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
@@ -36,6 +52,11 @@
     line-height: 24px;
     margin-bottom: 55px;
   }
+
+  @media #{$desktop} {
+    margin-bottom: 69px;
+    width: 433px;
+  }
 }
 
 @media #{$tablet} {
@@ -43,6 +64,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 99px;
+  }
+
+  @media #{$desktop} {
+    .example__wrapper {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -102,8 +130,12 @@
     font-size: 14px;
     line-height: 1;
     width: max-content;
-    padding: 0 7px;
+    padding: 0 9px;
     bottom: -5px;
+  }
+
+  @media #{$desktop} {
+    background-color: $grey-light;
   }
 }
 
@@ -124,11 +156,24 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media #{$desktop} {
+    align-items: flex-start;
+    flex-direction: row;
+    padding-bottom: 75px;
+  }
 }
 
 @media #{$tablet} {
   .example__expenses-value {
     margin-right: 0;
+    margin-bottom: 9px;
+  }
+}
+
+@media #{$desktop} {
+  .example__expenses-value {
+    margin-right: 63px;
     margin-bottom: 9px;
   }
 }

@@ -1,3 +1,9 @@
+@media #{$desktop} {
+  .contacts {
+    position: relative;
+  }
+}
+
 .contacts-color {
   background-color: $grey-extra-light;
 }
@@ -9,6 +15,14 @@
 
   @media #{$tablet} {
     padding: 60px 40px;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    background-color: $white;
+    top: 95px;
+    padding: 61px 78px 60px 80px;
+    width: 565px;
   }
 }
 
@@ -28,6 +42,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media #{$desktop} {
+    padding-right: 87px;
+  }
 }
 
 .contacts__text {
@@ -38,6 +56,10 @@
     font-size: 16px;
     text-align: right;
     width: 160px;
+  }
+
+  @media #{$desktop} {
+    text-align: left;
   }
 }
 
@@ -57,4 +79,8 @@
   display: block;
   width: 100%;
   border: none;
+
+  @media #{$tablet} {
+    height: 400px;
+  }
 }

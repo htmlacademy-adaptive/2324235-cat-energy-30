@@ -2,10 +2,10 @@
   background-color: $white;
   background-image:
     image-set(
-    url("../../images/hero-img@1x.jpg") type("image/jpg"),
-    url("../../images/hero-img@2x.jpg") type("image/jpg") 2x,
-    url("../../images/hero-img@1x.webp") type("image/webp"),
-    url("../../images/hero-img@2x.webp") type("image/webp") 2x),
+    url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
+    url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
+    url("../../images/hero-bg-mobile@1x.webp") type("image/webp"),
+    url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x),
     linear-gradient(to bottom, $green-gradient 303px, transparent 302px);
   background-repeat: no-repeat;
   background-size: 320px 302px, 100% 100%;
@@ -15,6 +15,22 @@
   @media #{$tablet} {
     background-image: none;
   }
+
+  @media #{$desktop} {
+    background-image:
+      image-set(
+        url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg"),
+        url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
+        url("../../images/hero-bg-desktop@1x.webp") type("image/webp"),
+        url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x),
+      linear-gradient(to left, $green-gradient 50%, transparent 50%);
+    background-size: 1041px 694px, 100% 100%;
+    background-position: top left calc(50% + 521px), center;
+    min-height: 694px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 82px;
+  }
 }
 
 .hero__inner {
@@ -22,6 +38,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
+
+  @media #{$desktop} {
+    padding-bottom: 0;
+    margin-bottom: 82px;
+  }
 }
 
 .hero__title {
@@ -34,6 +55,11 @@
     color: $black;
     text-align: start;
     padding-left: 90px;
+  }
+
+  @media #{$desktop} {
+    padding: 224px 0 40px 80px;
+    max-width: 500px;
   }
 }
 
@@ -54,10 +80,20 @@
     text-align: start;
     padding-left: 90px;
   }
+
+  @media #{$desktop} {
+    padding: 0 80px;
+    max-width: 450px;
+  }
 }
 
 .hero__img {
   margin: 29px auto 0;
+
+  @media #{$desktop} {
+    margin: -215px auto 0;
+    margin-right: 220px;
+  }
 }
 
 .hero__link {
@@ -78,5 +114,10 @@
     margin-left: 90px;
     position: absolute;
     top: 330px;
+  }
+
+  @media #{$desktop} {
+    top: 456px;
+    margin-left: 80px;
   }
 }

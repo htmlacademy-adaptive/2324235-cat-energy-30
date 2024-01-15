@@ -15,4 +15,16 @@
   @media #{$tablet} {
     margin-right: 13px;
   }
+
+  @media #{$desktop} {
+    margin-right: 14px;
+  }
 }
+
+@media #{$desktop} {
+  .logo-text {
+    width: 118px;
+    height: 21px;
+  }
+}
+

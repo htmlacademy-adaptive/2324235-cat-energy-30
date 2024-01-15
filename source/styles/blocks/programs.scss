@@ -5,6 +5,13 @@
 .programs__list {
   margin: 0 auto;
   padding: 0;
+
+  @media #{$desktop} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .programs__item {
@@ -14,6 +21,10 @@
 
   @media #{$tablet} {
     margin-bottom: 30px;
+  }
+
+  @media #{$desktop} {
+    max-width: 570px;
   }
 }
 
@@ -34,6 +45,13 @@
     left: auto;
     right: 63px;
   }
+
+  @media #{$desktop} {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .programs__item--slim::after {
@@ -51,6 +69,13 @@
     top: 81px;
     left: auto;
     right: 93px;
+  }
+
+  @media #{$desktop} {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
   }
 }
 
@@ -70,12 +95,20 @@
     left: auto;
     right: 29px;
   }
+
+  @media #{$desktop} {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .programs__title {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 24px;
+  color: $black;
   line-height: 37px;
   padding-top: 30px;
   padding-left: 90px;
@@ -89,6 +122,11 @@
     padding-top: 77px;
     padding-left: 53px;
     margin-bottom: 24px;
+  }
+
+  @media #{$desktop} {
+    padding-left: 214px;
+    margin-bottom: 73px;
   }
 }
 
@@ -104,11 +142,16 @@
     margin: 0 316px 48px 53px;
     border: none;
   }
+
+  @media #{$desktop} {
+    margin: 0 38px 23px 52px;
+  }
 }
 
 .programs__link {
   font-family: $font-primary;
   font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   color: $black;
   display: inline-block;
@@ -116,13 +159,21 @@
 
   @media #{$tablet} {
     margin: 0 0 53px 53px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
 .programs__link span {
   margin-right: 15px;
 
+
   @media #{$tablet} {
     margin-right: 25px;
+    margin-bottom: 2px;
   }
+}
+
+.icon-arrow {
+  margin-bottom: 3px;
 }
