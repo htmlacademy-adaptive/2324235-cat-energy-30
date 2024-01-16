@@ -1,9 +1,7 @@
 .product__title {
   padding: 27px 20px 41px;
-  text-align: center;
+  text-align: start;
   border-bottom: 1px solid $grey-special;
-  margin-left: -20px;
-  margin-right: -20px;
 
   @media #{$tablet} {
     padding: 65px 50px 84px;
@@ -18,10 +16,11 @@
 
 .product__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   column-gap: 20px;
 
   @media #{$tablet} {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     gap: 60px;
     margin-bottom: 70px;
   }
@@ -117,8 +116,8 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 14px;
-  padding-right: 76px;
-  max-width: 217px;
+  padding-right: 65px;
+  min-width: 175px;
 
   @media #{$tablet} {
     font-size: 20px;
@@ -134,6 +133,7 @@
   color: $text-color-special;
   padding: 0;
   align-self: center;
+  text-align: center;
 
   @media #{$tablet} {
     margin-bottom: 32px;

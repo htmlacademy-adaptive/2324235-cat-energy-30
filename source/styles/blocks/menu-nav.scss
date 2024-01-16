@@ -105,6 +105,13 @@
   }
 }
 
+@media #{$desktop} {
+  .menu-nav__link--deсor.menu-nav__link--current {
+    border-bottom: 2px solid $white;
+    padding-bottom: 8px;
+  }
+}
+
 @media #{$tablet} {
   .menu-nav__link--current {
     border-bottom: 2px solid $green-base;
@@ -114,7 +121,6 @@
 
 @media #{$desktop} {
   .menu-nav__link--current {
-    border-bottom: 2px solid $white;
     padding-bottom: 8px;
   }
 }
