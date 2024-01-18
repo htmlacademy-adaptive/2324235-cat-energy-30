@@ -5,12 +5,27 @@
 .programs__list {
   margin: 0 auto;
   padding: 0;
+
+  @media #{$desktop} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .programs__item {
   background-color: $grey-extra-light;
   margin-bottom: 20px;
   position: relative;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$desktop} {
+    max-width: 570px;
+  }
 }
 
 .programs__item::before {
@@ -22,6 +37,21 @@
   border-radius: 50%;
   top: 24px;
   left: 21px;
+
+  @media #{$tablet} {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: auto;
+    right: 63px;
+  }
+
+  @media #{$desktop} {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .programs__item--slim::after {
@@ -32,6 +62,21 @@
   background-image: url("../../images/icons/stack.svg#cat-slim");
   top: 21px;
   left: 27px;
+
+  @media #{$tablet} {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: auto;
+    right: 93px;
+  }
+
+  @media #{$desktop} {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .programs__item--pro::after {
@@ -42,35 +87,93 @@
   background-image: url("../../images/icons/stack.svg#cat-pro");
   top: 35px;
   left: 13px;
+
+  @media #{$tablet} {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 29px;
+  }
+
+  @media #{$desktop} {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
 }
 
 .programs__title {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 24px;
+  color: $black;
   line-height: 37px;
   padding-top: 30px;
   padding-left: 90px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 53px;
+    margin-bottom: 24px;
+  }
+
+  @media #{$desktop} {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__lead {
   margin: 0 20px 19px;
   border-bottom: 1px solid $grey-secondary;
   padding-bottom: 23px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    margin: 0 316px 48px 53px;
+    border: none;
+  }
+
+  @media #{$desktop} {
+    margin: 0 38px 23px 52px;
+  }
 }
 
 .programs__link {
   font-family: $font-primary;
   font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   color: $black;
   display: inline-block;
   margin: 0 20px 18px;
+
+  @media #{$tablet} {
+    margin: 0 0 53px 53px;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .programs__link span {
   margin-right: 15px;
+
+
+  @media #{$tablet} {
+    margin-right: 25px;
+    margin-bottom: 2px;
+  }
+}
+
+.icon-arrow {
+  margin-bottom: 3px;
 }

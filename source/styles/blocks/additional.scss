@@ -1,6 +1,10 @@
 .additional__wrapper-title {
   margin-top: 25px;
   margin-bottom: 36px;
+
+  @media #{$tablet} {
+    margin-bottom: 80px;
+  }
 }
 
 .additional__title {
@@ -10,11 +14,53 @@
   font-style: normal;
   line-height: 24px;
   color: $black;
+
+  @media #{$tablet} {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+  }
+
+  @media #{$desktop} {
+    margin-left: -40px;
+  }
+}
+
+@media #{$desktop} {
+  .additional__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media #{$desktop} {
+  .additional__list {
+    margin-right: 81px;
+    margin-bottom: 87px;
+  }
 }
 
 .additional__list-item {
   padding: 13px 0 0;
   border-top: 1px solid $grey;
+
+  @media #{$tablet} {
+    border: 1px solid $grey;
+    border-bottom: none;
+    padding: 26px 38px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+    border-left: none;
+    border-right: none;
+    flex-wrap: nowrap;
+    padding: 15px 0 17px;
+    align-items: center;
+  }
 }
 
 .additional__list-item:last-child {
@@ -30,24 +76,82 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0 auto 13px;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 25px;
+    padding-right: 20px;
+    width: calc(100% - 300px);
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    width: 314px;
+    padding-right: 10px;
+  }
 }
 
 .additional__property {
   display: flex;
   justify-content: space-between;
+  line-height: 14px;
   margin-bottom: 15px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 22px;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+  }
 }
 
-.additional__text {
-  line-height: 14px;
+@media #{$tablet} {
+  .additional__text {
+    margin: 0 50px 0 0;
+    min-width: 140px;
+    text-align: right;
+  }
 }
 
-.additional__value {
-  line-height: 14px;
+@media #{$desktop} {
+  .additional__text {
+    text-align: left;
+    min-width: 195px;
+  }
+}
+
+
+@media #{$tablet} {
+  .additional__value {
+    margin: 0;
+    min-width: 50px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  @media #{$desktop} {
+    .additional__value {
+      text-align: left;
+    }
+  }
 }
 
 .additional__button {
   margin-bottom: 19px;
+
+  @media #{$tablet} {
+    margin-bottom: 10px;
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+    width: 244px;
+    margin-left: 40px;
+  }
 }
 
 .additional__gift {
@@ -65,6 +169,19 @@
   top: 58px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media #{$tablet} {
+    width: 80px;
+    height: 83px;
+    background-size: 80px 83px;
+    left: 118px;
+  }
+
+  @media #{$desktop} {
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .additional__gift-background {
@@ -78,6 +195,29 @@
   background-size: cover, 100% 100%;
   background-position: center;
   margin: 35px 0;
+
+  @media #{$tablet} {
+    background-image:
+      image-set(url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
+      url("../../images/gift-tablet@2x.jpg") type("image/jpg") 2x,
+      url("../../images/gift-tablet@1x.webp") type("image/webp"),
+      url("../../images/gift-tablet@2x.webp") type("image/webp") 2x),
+      linear-gradient(to bottom, $green-gradient-secondary 200px, transparent 200px);
+    background-size: cover, 100% 100%;
+    background-position: top;
+  }
+
+  @media #{$desktop} {
+    background-image:
+      image-set(url("../../images/gift-desktop@1x.jpg") type("image/jpg"),
+      url("../../images/gift-desktop@2x.jpg") type("image/jpg") 2x,
+      url("../../images/gift-desktop@1x.webp") type("image/webp"),
+      url("../../images/gift-desktop@2x.webp") type("image/webp") 2x),
+      linear-gradient(to bottom, $green-gradient-secondary 288px, transparent 288px);
+    background-size: 245px 288px, 100% 100%;
+    background-position: top;
+    margin-top: 0;
+  }
 }
 
 .additional__gift-text {
@@ -88,4 +228,17 @@
   font-size: 16px;
   line-height: 20px;
   width: 161px;
+
+  @media #{$tablet} {
+    padding: 71px 0 69px;
+    margin-right: 125px;
+    text-align: start;
+  }
+
+  @media #{$desktop} {
+    padding: 185px 42px 43px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
 }

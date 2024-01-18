@@ -6,6 +6,14 @@
   width: 100%;
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
+
+  @media #{$tablet} {
+    border: none;
+    padding: 0;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-self: flex-end;
+  }
 }
 
 .social__link {

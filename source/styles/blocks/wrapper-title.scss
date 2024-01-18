@@ -11,5 +11,12 @@
   z-index: -1;
   height: 2px;
   background-color: $green-base;
-}
 
+  @media #{$tablet} {
+    top: 20px;
+  }
+
+  @media #{$desktop} {
+    top: 25px;
+  }
+}

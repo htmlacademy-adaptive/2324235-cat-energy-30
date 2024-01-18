@@ -2,11 +2,27 @@
   position: relative;
   width: 280px;
   height: 256px;
+
+  @media #{$tablet} {
+    width: 580px;
+    height: 512px;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .slider__img-before {
   width: 280px;
   height: 256px;
+
+  @media #{$tablet} {
+    width: 580px;
+    height: 512px;
+  }
 }
 
 .slider__before {
@@ -16,6 +32,16 @@
   width: 50%;
   height: 256px;
   background-color: $grey-super-light;
+
+  @media #{$tablet} {
+    height: 512px;
+    background-color: $white;
+    background-image: linear-gradient(to top, $grey-super-light 360px, transparent 360px);
+  }
+
+  @media #{$desktop} {
+    background-image: linear-gradient(to top, $grey-super-light 380px, transparent 380px);
+  }
 }
 
 .slider__before::after {
@@ -38,6 +64,11 @@
 .slider__img-after {
   width: 280px;
   height: 256px;
+
+  @media #{$tablet} {
+    width: 580px;
+    height: 512px;
+  }
 }
 
 .slider__button {
@@ -54,6 +85,7 @@
   z-index: 2;
   border-radius: 50%;
   padding: 0;
+  cursor: pointer;
 }
 
 .slider__button svg {
