@@ -116,14 +116,13 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 14px;
-  padding-right: 65px;
-  min-width: 175px;
+  max-width: 99px;
 
   @media #{$tablet} {
     font-size: 20px;
     line-height: 24px;
     padding: 0;
-    width: 135px;
+    max-width: 135px;
     text-align: center;
     margin: 0 auto 20px;
   }
@@ -134,9 +133,11 @@
   padding: 0;
   align-self: center;
   text-align: center;
+  max-width: 100%;
 
   @media #{$tablet} {
     margin-bottom: 32px;
+    max-width: 178px;
   }
 }
 
@@ -166,13 +167,18 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  margin: 0 0 21px;
+  margin: 0 11px 21px;
   text-align: center;
 
   @media #{$tablet} {
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 82px;
+  }
+
+  @media #{$desktop} {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -3,6 +3,7 @@ $base-text-color: #444444;
 $text-color-secondary: #222222;
 $text-color-special: #111111;
 $white: #ffffff;
+$white-gradient: rgba(255, 255, 255, 0.3);
 $grey-extra-light: #f2f2f2;
 $grey-super-light: #eaeaea;
 $grey-special: #ebebeb;
@@ -18,9 +19,13 @@ $black: #000000;
 $green-base: #68b738;
 $green-gradient: #64a83d;
 $green-gradient-secondary:#7ec256;
+$green-primary: #5eaa2f;
+
+$color-disabled: #ff8282;
 
 $font-base: "Lato", "arial", sans-serif;
 $font-primary: "Oswald", "arial", sans-serif;
 
+$mobile-only: "(max-width: 767px)";
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1440px)";

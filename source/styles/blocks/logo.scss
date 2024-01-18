@@ -9,6 +9,15 @@
   }
 }
 
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
 .logo-img {
   margin-right: 55px;
 

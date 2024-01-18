@@ -9,4 +9,20 @@
   padding: 10px 20px;
   text-transform: uppercase;
   width: 100%;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $green-primary;
+}
+
+.button:active {
+  background-color: $green-primary;
+  color: $white-gradient;
+}
+
+.button-disabled {
+  opacity: 0.5;
+  cursor: default;
 }

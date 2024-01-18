@@ -32,7 +32,7 @@
 }
 
 .selection__wrapper-title {
-  margin: 26px 0 35px;
+  margin: 26px 0 0;
 
   @media #{$desktop} {
     margin: 0;
@@ -85,20 +85,11 @@
   position: relative;
 }
 
-.selection__data:last-child {
-  padding-bottom: 24px;
-
-  @media #{$desktop} {
-    padding-bottom: 0;
-  }
-}
-
 .selection__wrapper-program {
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
   padding: 22px 20px 0;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 24px -20px 0;
 
   @media #{$tablet} {
     border: 1px solid $grey-secondary;
@@ -190,11 +181,11 @@
   display: block;
   padding-bottom: 38px;
   padding-left: 45px;
+  cursor: pointer;
 }
 
 .selection__items-input--radio {
   position: absolute;
-  appearance: none;
   border: none;
 }
 
@@ -206,6 +197,7 @@
   transform: translateY(-25%);
   border-radius: 50%;
   margin-left: -45px;
+  cursor: pointer;
 }
 
 .selection__items-input--radio:checked + .selection__items-radio::before {
@@ -292,6 +284,7 @@
   display: block;
   margin-bottom: 18px;
   padding-left: 45px;
+  cursor: pointer;
 
   @media #{$tablet} {
     margin: 0;
@@ -300,7 +293,6 @@
 
 .selection__items-input--check {
   position: absolute;
-  appearance: none;
   border: none;
 }
 
@@ -311,6 +303,7 @@
   border: 1px solid $grey-primary;
   transform: translateY(-25%);
   margin-left: -45px;
+  cursor: pointer;
 }
 
 .selection__items-input--check:checked + .selection__items-check {
