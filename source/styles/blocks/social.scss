@@ -20,7 +20,11 @@
   fill: $grey-dark;
 }
 
-.social__item .social__link:focus,
+.social__link:focus,
 .social__link:hover {
   fill: $green-base;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

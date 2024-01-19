@@ -190,3 +190,10 @@
   background-color: $grey-extra-light;
   color: $base-text-color;
 }
+
+.product__button--transparent:focus,
+.product__button--transparent:hover,
+.product__button--transparent:active {
+  background-color: $grey-special;
+  color: $base-text-color;
+}

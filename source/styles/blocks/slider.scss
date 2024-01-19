@@ -44,16 +44,17 @@
   }
 }
 
-.slider__before::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -2px;
-  width: 4px;
-  height: 100%;
-  background-color: $grey-dark;
-  border-radius: 2px;
-}
+// .slider__before::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: -2px;
+//   width: 4px;
+//   height: 100%;
+//   background-color: $grey-dark;
+//   border-radius: 2px;
+//   cursor: pointer;
+// }
 
 .slider__before-inner {
   width: 100%;
@@ -77,7 +78,7 @@
   justify-content: center;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 50%;
   border: 2px solid $grey-dark;
   width: 40px;
   height: 40px;
@@ -86,8 +87,29 @@
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
+  background-color: $white;
+  fill: $grey-dark;
 }
 
-.slider__button svg {
-  fill: $grey-dark;
+
+.slider__button::after {
+  content: "";
+  position: absolute;
+  top: -238px;
+  right: 16px;
+  width: 4px;
+  height: 512px;
+  background-color: $grey-dark;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  border: 2px solid $green-base;
+  fill: $green-base;
+}
+
+.slider__button:hover::after {
+  background-color: $green-base;
 }
