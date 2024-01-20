@@ -44,18 +44,6 @@
   }
 }
 
-// .slider__before::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: -2px;
-//   width: 4px;
-//   height: 100%;
-//   background-color: $grey-dark;
-//   border-radius: 2px;
-//   cursor: pointer;
-// }
-
 .slider__before-inner {
   width: 100%;
   height: 100%;
@@ -87,21 +75,33 @@
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  background-color: $white;
   fill: $grey-dark;
+  background-color: $white;
 }
 
 
+.slider__button::before,
 .slider__button::after {
   content: "";
   position: absolute;
-  top: -238px;
   right: 16px;
   width: 4px;
-  height: 512px;
+  height: 108px;
   background-color: $grey-dark;
   border-radius: 2px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    height: 236px;
+  }
+}
+
+.slider__button::before {
+  top: 37px;
+}
+
+.slider__button::after {
+  bottom: 37px;
 }
 
 .slider__button:hover,
@@ -110,6 +110,19 @@
   fill: $green-base;
 }
 
+.slider__button:active {
+  border: 2px solid $green-primary;
+  fill: $green-primary;
+  opacity: 0.6;
+}
+
+.slider__button:hover::before,
 .slider__button:hover::after {
   background-color: $green-base;
+}
+
+.slider__button:active::before,
+.slider__button:active::after {
+  background-color: $green-primary;
+  opacity: 0.6;
 }
