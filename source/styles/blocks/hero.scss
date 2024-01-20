@@ -121,3 +121,18 @@
     margin-left: 80px;
   }
 }
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: $green-primary;
+}
+
+.hero__link:active {
+  background-color: $green-primary;
+  color: $white-gradient;
+}
+
+.hero__link-disabled {
+  opacity: 0.5;
+  cursor: default;
+}

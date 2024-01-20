@@ -15,7 +15,11 @@
   fill: $text-color-special;
 }
 
-.footer-logo svg:focus,
+.footer__logo-link:focus svg,
 .footer-logo svg:hover {
   fill: $black-super-light;
+}
+
+.footer-logo svg:active {
+  fill: $black-extra-light;
 }

@@ -5,6 +5,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  color: $base-text-color;
+  fill: $grey-dark;
 
   @media #{$tablet} {
     padding: 0;
@@ -13,7 +15,6 @@
 }
 
 .developer span {
-  color: $base-text-color;
   font-family: $font-base;
   font-size: 16px;
   font-style: normal;
@@ -28,11 +29,11 @@
   }
 }
 
-.icon-html-academy {
-  fill: $grey-dark;
+.developer:focus,
+.developer:hover {
+  fill: $green-base;
 }
 
-.developer:focus .icon-html-academy,
-.icon-html-academy:hover {
-  fill: $green-base;
+.developer:active {
+  opacity: 0.3;
 }
