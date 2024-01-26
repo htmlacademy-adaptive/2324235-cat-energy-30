@@ -11,5 +11,10 @@
 
   @media #{$tablet} {
     flex-direction: row;
+    padding: 54px 0;
+  }
+
+  @media #{$desktop} {
+    padding: 65px 0;
   }
 }

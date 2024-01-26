@@ -1,8 +1,8 @@
 .social {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  padding: 20px 0;
+  gap: 23px;
+  padding: 20px 0 14px;
   width: 100%;
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
@@ -11,7 +11,7 @@
     border: none;
     padding: 0;
     justify-content: flex-start;
-    padding-left: 25px;
+    padding-left: 28px;
     align-self: flex-end;
   }
 }
