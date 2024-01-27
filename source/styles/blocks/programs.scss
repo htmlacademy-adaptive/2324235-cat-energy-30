@@ -10,18 +10,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
     column-gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 29px;
   }
 }
 
 .programs__item {
   background-color: $grey-extra-light;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   position: relative;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   @media #{$tablet} {
     margin-bottom: 30px;
+    padding-bottom: 58px;
   }
 
   @media #{$desktop} {
@@ -42,9 +43,9 @@
   @media #{$tablet} {
     width: 200px;
     height: 200px;
-    top: 92px;
+    top: 88px;
     left: auto;
-    right: 63px;
+    right: 64px;
   }
 
   @media #{$desktop} {
@@ -67,9 +68,9 @@
   @media #{$tablet} {
     width: 140px;
     height: 194px;
-    top: 81px;
+    top: 77px;
     left: auto;
-    right: 93px;
+    right: 92px;
   }
 
   @media #{$desktop} {
@@ -120,12 +121,13 @@
   @media #{$tablet} {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 77px;
+    padding-top: 74px;
     padding-left: 53px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   @media #{$desktop} {
+    padding-top: 78px;
     padding-left: 214px;
     margin-bottom: 73px;
   }
@@ -134,13 +136,14 @@
 .programs__lead {
   margin: 0 20px 19px;
   border-bottom: 1px solid $grey-secondary;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   @media #{$tablet} {
     font-size: 16px;
     line-height: 24px;
     color: $black;
-    margin: 0 316px 48px 53px;
+    padding-bottom: 10px;
+    margin: 0 316px 50px 53px;
     border: none;
   }
 
@@ -164,6 +167,7 @@
     margin: 0 0 53px 53px;
     font-size: 20px;
     line-height: 1;
+    padding-right: 60px;
   }
 }
 

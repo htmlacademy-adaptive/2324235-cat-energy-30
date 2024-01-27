@@ -58,18 +58,20 @@
     transition: none;
     flex-wrap: wrap;
     z-index: 0;
+    padding-right: 18px;
   }
 
   @media #{$desktop} {
     font-size: 20px;
     line-height: 1;
-    gap: 32px;
+    gap: 34px;
     background-color: transparent;
   }
 }
 
 .menu-nav__list.active {
   transform: translateY(0);
+  top: 64px;
 }
 
 @media #{$mobile-only} {
@@ -81,7 +83,7 @@
 }
 
 .menu-nav__item {
-  padding: 22px 20px 24px;
+  padding: 23px 20px;
   border-bottom: 1px solid $grey-light;
 
   @media #{$tablet} {
@@ -114,20 +116,20 @@
 @media #{$desktop} {
   .menu-nav__link--decor.menu-nav__link--current {
     border-bottom: 2px solid $white;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 }
 
 @media #{$tablet} {
   .menu-nav__link--current {
     border-bottom: 2px solid $green-base;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 
 @media #{$desktop} {
   .menu-nav__link--current {
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 }
 
@@ -142,7 +144,7 @@
   z-index: 2;
   cursor: pointer;
   right: 20px;
-  top: 22px;
+  top: 19px;
 
   @media #{$tablet} {
     display: none;
@@ -173,6 +175,10 @@
   transform: translateY(8px);
 }
 
+.menu-nav__toggle.active {
+  right: 17px;
+}
+
 .menu-nav__toggle.active span:first-child {
   transform: translateY(0) rotate(45deg);
 }
@@ -184,3 +190,4 @@
 .menu-nav__toggle.active span:last-child {
   transform: translateY(0) rotate(-45deg);
 }
+

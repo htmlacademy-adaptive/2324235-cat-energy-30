@@ -1,9 +1,10 @@
 .effect__title {
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media #{$tablet} {
     line-height: 60px;
+    padding-top: 16px;
     margin-bottom: 32px;
   }
 
@@ -22,10 +23,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     row-gap: 37px;
-    column-gap: 140px;
+    column-gap: 62px;
+    margin-bottom: 19px;
 
     @media #{$desktop} {
-      column-gap: 94px;
+      column-gap: 80px;
       margin-bottom: 69px;
     }
   }
@@ -118,11 +120,19 @@
   padding-left: 80px;
   margin: 0;
 
+  & br {
+    display: none;
+  }
+
   @media #{$tablet} {
-    padding: 111px 0 57px;
+    padding: 110px 0 57px;
     font-size: 16px;
     line-height: 24px;
     position: absolute;
     z-index: 1;
+
+    & br {
+      display: block;
+    }
   }
 }

@@ -23,6 +23,10 @@ dd {
   padding: 0;
 }
 
+textarea {
+  overflow: hidden;
+}
+
 body {
   font-family: $font-base;
   color: $base-text-color;

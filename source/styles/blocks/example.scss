@@ -13,7 +13,7 @@
 
 
 .example__inner {
-  padding: 25px 0 40px;
+  padding: 27px 0 40px;
 
   @media #{$tablet} {
     padding-bottom: 101px;
@@ -26,7 +26,7 @@
 }
 
 .example__title {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 
   @media #{$tablet} {
     border-top: 1px solid $grey-light;
@@ -63,7 +63,7 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 55px;
   }
 
   @media #{$desktop} {
@@ -90,7 +90,7 @@
 .example__info-item {
   border: 1px solid $grey;
   border-radius: 3px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
   width: 124px;
   margin-bottom: 34px;
@@ -100,6 +100,7 @@
     width: 162px;
     padding-top: 15px;
     padding-bottom: 20px;
+    margin-bottom: 46px;
   }
 }
 
@@ -122,8 +123,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -17px;
-  padding: 0 15px;
+  bottom: -15px;
+  padding: 0 14px;
   background-color: $grey-super-light;
 
   @media #{$tablet} {
@@ -161,7 +162,7 @@
   @media #{$desktop} {
     align-items: flex-start;
     flex-direction: row;
-    padding-bottom: 75px;
+    padding-bottom: 65px;
   }
 }
 
@@ -174,7 +175,7 @@
 
 @media #{$desktop} {
   .example__expenses-value {
-    margin-right: 63px;
+    margin-right: 66px;
     margin-bottom: 9px;
   }
 }

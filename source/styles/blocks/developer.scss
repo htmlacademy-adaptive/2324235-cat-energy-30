@@ -4,13 +4,13 @@
   height: 34px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 38px;
   color: $base-text-color;
   fill: $grey-dark;
 
   @media #{$tablet} {
     padding: 0;
-    min-width: 168px;
+    min-width: 163px;
   }
 }
 

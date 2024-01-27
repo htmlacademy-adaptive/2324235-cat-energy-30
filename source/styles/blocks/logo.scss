@@ -19,7 +19,7 @@
 }
 
 .logo-img {
-  margin-right: 55px;
+  margin-right: 56px;
 
   @media #{$tablet} {
     margin-right: 13px;
@@ -30,8 +30,10 @@
   }
 }
 
-@media #{$desktop} {
-  .logo-text {
+.logo-text {
+  margin-bottom: 2px;
+
+  @media #{$desktop} {
     width: 118px;
     height: 21px;
   }
