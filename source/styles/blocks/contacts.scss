@@ -21,7 +21,7 @@
     position: absolute;
     background-color: $white;
     top: 95px;
-    padding: 61px 78px 60px 80px;
+    padding: 58px 78px 60px 80px;
     width: 565px;
   }
 }
@@ -60,6 +60,7 @@
 
   @media #{$desktop} {
     text-align: left;
+    width: 158px;
   }
 }
 
