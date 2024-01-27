@@ -54,17 +54,17 @@
     top: 0;
     font-size: 18px;
     line-height: 24px;
-    gap: 34px;
+    gap: 33px;
     transition: none;
     flex-wrap: wrap;
     z-index: 0;
-    padding-right: 20px;
+    padding-right: 18px;
   }
 
   @media #{$desktop} {
     font-size: 20px;
     line-height: 1;
-    gap: 32px;
+    gap: 34px;
     background-color: transparent;
   }
 }

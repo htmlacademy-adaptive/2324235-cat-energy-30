@@ -3,12 +3,12 @@
   margin: 0 -20px;
 
   @media #{$tablet} {
-    padding: 65px 40px 54px;
+    padding: 42px 40px 54px;
     margin: 0;
   }
 
   @media #{$desktop} {
-    padding: 74px 0 55px;
+    padding: 60px 0 55px;
   }
 }
 
@@ -32,7 +32,7 @@
 }
 
 .selection__wrapper-title {
-  margin: 26px 0 76px;
+  margin: 0 0 33px;
 
   @media #{$desktop} {
     margin: 0;
@@ -45,13 +45,15 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  padding-bottom: 34px;
+  padding-right: 24px;
+  margin-bottom: 14px;
 
   @media #{$tablet} {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
     padding-bottom: 0;
+    padding-right: 38px;
 
     & br {
       display: none;
@@ -59,14 +61,15 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 76px;
-    margin-left: -70px;
+    margin-bottom: 37px;
+    margin-left: -43px;
   }
 }
 
 .selection__items {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   @media #{$desktop} {
     display: grid;
@@ -77,27 +80,48 @@
   }
 }
 
+@media #{$tablet} {
+  .selection__items-connect {
+    padding-top: 42px;
+    padding-bottom: 35px;
+  }
+}
+
+@media #{$desktop} {
+  .selection__items-connect {
+    padding-bottom: 10px;
+  }
+}
+
 .selection__data {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 14px;
   position: relative;
+
+  @media #{$tablet} {
+    padding-bottom: 23px;
+  }
+
+  @media #{desktop} {
+    padding-bottom: 21px;
+  }
 }
 
 .selection__wrapper-program {
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
-  padding: 22px 20px 0;
-  margin: 24px -20px 0;
+  padding: 30px 20px 0;
+  margin: 10px -20px 9px;
 
   @media #{$tablet} {
     border: 1px solid $grey-secondary;
-    margin: 48px 40px 65px;
-    padding: 23px 27px 0 23px;
+    margin: 48px 40px 46px;
+    padding: 33px 27px 3px 23px;
 
     @media #{$desktop} {
-      padding: 30px 10px 0 28px;
+      padding: 33px 10px 0 22px;
     }
   }
 
@@ -135,13 +159,14 @@
   font-size: 16px;
   text-transform: uppercase;
   flex-grow: 1;
-  padding: 14px 15px 13px;
+  padding: 9px 15px 10px;
   border: 1px solid $grey-primary;
 
   @media #{$tablet} {
     font-size: 20px;
     line-height: 1;
     margin-right: 40px;
+    padding: 9px 19px 10px;
   }
 
   @media #{$desktop} {
@@ -161,7 +186,7 @@
   transform: translateY(15%);
   stroke: $text-color-secondary;
   position: absolute;
-  right: 15px;
+  right: 11px;
 
   @media #{$tablet} {
     right: 55px;
@@ -182,9 +207,18 @@
 
 .selection__items-label--radio {
   display: block;
-  padding-bottom: 38px;
+  padding-bottom: 26px;
   padding-left: 45px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    padding-left: 63px;
+    padding-bottom: 33px;
+  }
+
+  @media #{desktop} {
+    padding-left: 65px;
+  }
 }
 
 .selection__items-label--radio:active {
@@ -205,6 +239,12 @@
   border-radius: 50%;
   margin-left: -45px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    width: 40px;
+    height: 40px;
+    margin-left: -59px;
+  }
 }
 
 .selection__items-input--radio:focus + .selection__items-radio,
@@ -222,6 +262,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+
+  @media #{$tablet} {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .selection__items-input:focus ~ .selection-icon {
@@ -242,6 +287,12 @@
   }
 }
 
+@media #{$desktop} {
+  .selection__textaria {
+    margin: 0;
+  }
+}
+
 .selection__items-textarea {
   font-family: $font-primary;
   font-weight: 400;
@@ -250,22 +301,24 @@
   text-transform: uppercase;
   color: $base-text-color;
   width: 100%;
-  min-height: 150px;
   border: 1px solid $grey-primary;
   outline: none;
   padding: 14px 14px 15px;
+  height: 150px;
+  margin-top: 14px;
+  margin-bottom: -15px;
 
   @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
     padding: 11px 20px 15px;
-    min-height: 175px;
-    margin: 87px 0 65px;
+    height: 175px;
+    margin: 60px 0 29px;
   }
 
   @media #{$desktop} {
-    margin-top: 0;
-    margin-left: -50px;
+    margin: 7px 0 65px;
+    padding: 9px 19px 0;
   }
 }
 
@@ -293,25 +346,27 @@
   column-gap: 50px;
 
   @media #{$tablet} {
-    column-gap: 94px;
-    row-gap: 32px;
-    margin: 57px 40px 52px;
+    column-gap: 63px;
+    row-gap: 28px;
+    margin: 53px 40px 40px;
   }
 
   @media #{$desktop} {
-    margin: 0 0 60px;
+    margin: 0 0 42px;
     column-gap: 73px;
   }
 }
 
 .selection__items-label--check {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: -5px;
   padding-left: 45px;
   cursor: pointer;
+  margin-top: 17px;
 
   @media #{$tablet} {
     margin: 0;
+    padding-left: 59px;
   }
 }
 
@@ -337,6 +392,12 @@
   transform: translateY(-25%);
   margin-left: -45px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    width: 40px;
+    height: 40px;
+    margin-left: -59px;
+  }
 }
 
 .selection__items-input--check:checked + .selection__items-check {
@@ -351,15 +412,15 @@
   .selection__send {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
     text-align: center;
-    margin: 0 40px 39px;
+    margin: 0 40px 26px;
   }
 }
 
 @media #{$desktop} {
   .selection__send {
     margin-left: 0;
+    margin-bottom: 52px;
   }
 }
 
@@ -368,15 +429,18 @@
   margin-bottom: 21px;
 
   @media #{$tablet} {
-    width: 46%;
+    width: 45%;
     padding-top: 14px;
     padding-bottom: 14px;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 32px;
+    height: 54px;
   }
 
   @media #{$desktop} {
     margin: 0;
+    width: 48%;
   }
 }
 
@@ -390,6 +454,11 @@
     font-size: 16px;
     line-height: 16px;
     padding-bottom: 21px;
-    width: 50%;
+    width: 47%;
+    margin-top: 15px;
+  }
+
+  @media #{$desktop} {
+    width: 29%;
   }
 }
