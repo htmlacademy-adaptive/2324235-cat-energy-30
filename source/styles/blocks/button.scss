@@ -12,17 +12,17 @@
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button:not([disabled]):hover,
+.button:not([disabled]):focus {
   background-color: $green-primary;
 }
 
-.button:active {
+.button:not([disabled]):active {
   background-color: $green-primary;
   color: $white-gradient;
 }
 
-.button-disabled {
+.button:disabled {
   opacity: 0.5;
   cursor: default;
 }

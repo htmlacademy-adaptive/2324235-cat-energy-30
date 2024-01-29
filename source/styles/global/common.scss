@@ -8,25 +8,6 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-dl {
-  padding: 0;
-  margin: 0;
-}
-
-li,
-dt,
-dd {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: hidden;
-}
-
 body {
   font-family: $font-base;
   color: $base-text-color;

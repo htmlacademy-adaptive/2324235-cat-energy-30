@@ -4,7 +4,7 @@
   }
 }
 
-.contacts-color {
+.contacts--color {
   background-color: $grey-extra-light;
 }
 
@@ -87,7 +87,7 @@
       url("../../images/maps-mobile@1x.webp") type("image/webp"),
       url("../../images/maps-mobile@2x.webp") type("image/webp") 2x);
   background-repeat: no-repeat;
-  background-size: cover 362px;
+  background-size: cover;
   background-position: center;
 
   @media #{$mobile} {
@@ -97,7 +97,6 @@
         url("../../images/maps-tablet@2x.jpg") type("image/jpg") 2x,
         url("../../images/maps-tablet@1x.webp") type("image/webp"),
         url("../../images/maps-tablet@2x.webp") type("image/webp") 2x);
-    height: 400px;
   }
 
   @media #{$tablet-alter} {
@@ -117,6 +116,12 @@
   border: none;
 
   @media #{$tablet} {
-    height: 400px;
+    & canvas {
+      height: 400px;
+    }
   }
+}
+
+.contacts__maps--nojs {
+  display: none;
 }

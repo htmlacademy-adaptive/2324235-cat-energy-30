@@ -1,5 +1,5 @@
 .product__title {
-  padding: 27px 20px 41px;
+  padding: 27px 0 41px;
   text-align: start;
   border-bottom: 1px solid $grey-special;
 
@@ -9,12 +9,14 @@
     border: none;
 
     @media #{$desktop} {
-      padding: 60px 110px 64px;
+      padding: 60px 0 64px;
     }
   }
 }
 
 .product__list {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   column-gap: 20px;
@@ -39,8 +41,7 @@
   grid-template-columns: 140px 1fr;
   padding: 20px 20px 25px;
   border-bottom: 1px solid $grey-special;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 0 -20px 0;
   min-height: 209px;
 
   @media #{$tablet} {
@@ -52,7 +53,7 @@
     padding: 12px 37px 40px;
     margin: 16px 0 0;
     padding-top: 14px;
-    background-color: $grey-super-light;
+    background-color: $grey-extra-light;
     background-image: linear-gradient(to bottom, $white 81px, transparent 81px,);
   }
 }
@@ -125,7 +126,6 @@
 .product__card--more {
   grid-column: 1 / -1;
   height: 100%;
-  margin: 0;
 }
 
 .product__card-title {
@@ -207,7 +207,7 @@
   }
 
   @media #{$desktop} {
-    margin: 0  0 92px;
+    margin: 0 0 92px;
   }
 }
 

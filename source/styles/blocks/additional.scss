@@ -26,6 +26,19 @@
   }
 }
 
+.additional__title--decor {
+  margin: 0 -20px;
+  padding: 0 20px;
+  width: max-content;
+  background-color: $white;
+
+  @media #{$tablet} {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+}
+
+
 @media #{$desktop} {
   .additional__inner {
     display: flex;
@@ -33,8 +46,12 @@
   }
 }
 
-@media #{$desktop} {
-  .additional__list {
+.additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media #{$desktop} {
     margin-right: 81px;
     margin-bottom: 87px;
   }
