@@ -11,15 +11,3 @@
     line-height: 60px;
   }
 }
-
-.title-decor {
-  margin: 0 -20px;
-  padding: 0 20px;
-  width: max-content;
-  background-color: $white;
-
-  @media #{$tablet} {
-    margin: 0 -40px;
-    padding: 0 40px;
-  }
-}

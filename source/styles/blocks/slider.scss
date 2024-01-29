@@ -10,7 +10,7 @@
 
   @media #{$desktop} {
     position: absolute;
-    top: 0;
+    bottom: 84px;
     right: 0;
   }
 }
@@ -36,11 +36,11 @@
   @media #{$tablet} {
     height: 512px;
     background-color: $white;
-    background-image: linear-gradient(to top, $grey-super-light 360px, transparent 360px);
+    background-image: linear-gradient(to top, $grey-super-light 361px, transparent 361px);
   }
 
   @media #{$desktop} {
-    background-image: linear-gradient(to top, $grey-super-light 380px, transparent 380px);
+    background-image: linear-gradient(to top, $grey-super-light 377px, transparent 377px);
   }
 }
 

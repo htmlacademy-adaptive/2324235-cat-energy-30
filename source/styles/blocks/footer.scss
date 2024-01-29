@@ -11,10 +11,35 @@
 
   @media #{$tablet} {
     flex-direction: row;
-    padding: 54px 0;
+    padding: 63px 0;
   }
 
   @media #{$desktop} {
-    padding: 65px 0;
+    padding: 75px 0;
   }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  width: 100%;
+
+  @media #{$tablet} {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo svg {
+  fill: $text-color-special;
+}
+
+.footer__logo-link:focus svg,
+.footer__logo svg:hover {
+  fill: $black-super-light;
+}
+
+.footer__logo svg:active {
+  fill: $black-extra-light;
 }

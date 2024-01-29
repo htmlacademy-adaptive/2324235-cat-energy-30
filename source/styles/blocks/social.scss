@@ -6,6 +6,7 @@
   width: 100%;
   border-bottom: 1px solid $grey-secondary;
   border-top: 1px solid $grey-secondary;
+  list-style: none;
 
   @media #{$tablet} {
     border: none;

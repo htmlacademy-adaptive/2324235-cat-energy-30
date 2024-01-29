@@ -6,6 +6,7 @@
 
   @media #{$desktop} {
     border: none;
+    width: 42%;
   }
 }
 
@@ -45,6 +46,9 @@
   transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
   z-index: -2;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
   @media #{$tablet} {
     flex-direction: row;
@@ -54,7 +58,8 @@
     top: 0;
     font-size: 18px;
     line-height: 24px;
-    gap: 33px;
+    column-gap: 33px;
+    row-gap: 15px;
     transition: none;
     flex-wrap: wrap;
     z-index: 0;
@@ -64,7 +69,8 @@
   @media #{$desktop} {
     font-size: 20px;
     line-height: 1;
-    gap: 34px;
+    column-gap: 34px;
+    row-gap: 20px;
     background-color: transparent;
   }
 }
@@ -85,12 +91,11 @@
 .menu-nav__item {
   padding: 23px 20px;
   border-bottom: 1px solid $grey-light;
+  margin: 0;
 
   @media #{$tablet} {
     border: none;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
@@ -190,4 +195,3 @@
 .menu-nav__toggle.active span:last-child {
   transform: translateY(0) rotate(-45deg);
 }
-

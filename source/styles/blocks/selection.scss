@@ -61,10 +61,27 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 37px;
+    margin-bottom: 76px;
     margin-left: -43px;
   }
 }
+
+.selection__form-title--decor {
+  margin: 0 -20px;
+  padding: 0 20px;
+  width: max-content;
+  background-color: $white;
+
+  @media #{$tablet} {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 75px;
+  }
+}
+
 
 .selection__items {
   display: flex;
@@ -89,6 +106,7 @@
 
 @media #{$desktop} {
   .selection__items-connect {
+    padding-top: 0;
     padding-bottom: 10px;
   }
 }
@@ -182,7 +200,7 @@
   color: $base-text-color;
 }
 
-.selection-icon {
+.selection__icon {
   transform: translateY(15%);
   stroke: $text-color-secondary;
   position: absolute;
@@ -210,6 +228,7 @@
   padding-bottom: 26px;
   padding-left: 45px;
   cursor: pointer;
+  color: $text-color-secondary;
 
   @media #{$tablet} {
     padding-left: 63px;
@@ -219,10 +238,6 @@
   @media #{desktop} {
     padding-left: 65px;
   }
-}
-
-.selection__items-label--radio:active {
-  opacity: 0.3;
 }
 
 .selection__items-input--radio {
@@ -247,9 +262,33 @@
   }
 }
 
-.selection__items-input--radio:focus + .selection__items-radio,
-.selection__items-label--radio:hover > .selection__items-radio {
-  border: 1px solid $grey-twilight;
+.selection__items-input--radio:disabled ~ .selection__items-text {
+  color: $text-color-secondary;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.selection__items-input--radio:not(:disabled):hover ~ .selection__items-text {
+  color: $text-color-secondary;
+}
+
+.selection__items-input--radio:not(:disabled):active ~ .selection__items-text {
+  opacity: 0.3;
+}
+
+.selection__items-input--radio:not(:disabled):hover ~ .selection__items-radio,
+.selection__items-input--radio:not(:disabled):focus ~ .selection__items-radio {
+  border-color: $grey-twilight;
+}
+
+.selection__items-input--radio:not(:disabled):active ~ .selection__items-radio {
+  color: $text-color-secondary;
+  opacity: 0.3;
+}
+
+.selection__items-input--radio:disabled ~ .selection__items-radio {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .selection__items-input--radio:checked + .selection__items-radio::before {
@@ -269,11 +308,11 @@
   }
 }
 
-.selection__items-input:focus ~ .selection-icon {
+.selection__items-input:focus ~ .selection__icon {
   stroke: $green-base;
 }
 
-.selection__items-input--error ~ .selection-icon {
+.selection__items-input--error ~ .selection__icon {
   stroke: $color-error;
 }
 
@@ -307,6 +346,7 @@
   height: 150px;
   margin-top: 14px;
   margin-bottom: -15px;
+  overflow: hidden;
 
   @media #{$tablet} {
     font-size: 20px;
@@ -358,40 +398,31 @@
 }
 
 .selection__items-label--check {
+  position: relative;
   display: block;
   margin-bottom: -5px;
   padding-left: 45px;
-  cursor: pointer;
   margin-top: 17px;
+  cursor: pointer;
+  color: $black;
 
   @media #{$tablet} {
     margin: 0;
-    padding-left: 59px;
+    padding-left: 0;
   }
-}
-
-.selection__items-label--check:active {
-  opacity: 0.3;
-}
-
-.selection__items-input--check {
-  position: absolute;
-  border: none;
-}
-
-.selection__items-input--check:focus + .selection__items-check,
-.selection__items-label--check:hover > .selection__items-check {
-  border: 1px solid $grey-twilight;
 }
 
 .selection__items-check {
   position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid $grey-primary;
+  border: 1px solid $grey;
   transform: translateY(-25%);
   margin-left: -45px;
-  cursor: pointer;
 
   @media #{$tablet} {
     width: 40px;
@@ -400,12 +431,41 @@
   }
 }
 
+.selection__items-input--check:disabled ~ .selection__items-text {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.selection__items-input--check:not(:disabled):hover ~ .selection__items-text {
+  color: $black;
+}
+
+.selection__items-input--check:not(:disabled):active ~ .selection__items-text {
+  opacity: 0.3;
+}
+
+.selection__items-input--check:not(:disabled):hover ~ .selection__items-check,
+.selection__items-input--check:not(:disabled):focus ~ .selection__items-check {
+  border-color: $grey-twilight;
+}
+
+.selection__items-input--check:not(:disabled):active ~ .selection__items-check {
+  color: $grey-twilight;
+  opacity: 0.3;
+}
+
+.selection__items-input--check:disabled ~ .selection__items-check {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .selection__items-input--check:checked + .selection__items-check {
   content: "";
   background-image: url("../../images/icons/stack.svg#icon-check");
   background-size: 18px 14px;
   background-repeat: no-repeat;
   background-position: center;
+  border-color: $grey-twilight;
 }
 
 @media #{$tablet} {
